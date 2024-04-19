@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://aaghum-ministries.vercel.app/'
 }));
 app.use(express.json());
 
