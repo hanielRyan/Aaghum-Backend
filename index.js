@@ -9,6 +9,10 @@ app.use(express.json());
 
 app.use("/",require("./mail"));
 
+app.get("/message",(req,res)=>{
+    res.send("hi")
+})
+
 app.use((err,req,res,next)=>{
     console.log(err);
     res.status(err.status).json(err.message);
