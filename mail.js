@@ -21,7 +21,7 @@ router.post("/",(req,res,next)=>{
             from:user.email,
             to: 'aaghum.eh@gmail.com',
             subject: user.subject,
-            html: `<h1>Name: ${user.firstName}</h1><h1>Email: ${user.email}</h1><h3>Message: ${user.message}</h3>`
+            html: `<h1>Name: ${user.firstName} ${user.lastName}</h1><h1>Email: ${user.email}</h1><h3>Message: ${user.message}</h3>`
         };
     
         transporter.sendMail(mailOptions, (error, info) => {
