@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 
 router.post("/",(req,res,next)=>{
 
-    res.setHeader("Access-Control-Allow-Origin", "https://aaghum-ministries.vercel.app");
+    res.setHeader("Access-Control-Allow-Origin", "https://aaghumministries.vercel.app");
 
     try{
         const user  = req.body.data;
