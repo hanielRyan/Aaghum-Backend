@@ -19,7 +19,7 @@ router.post("/",(req,res,next)=>{
         console.log(user)
         const mailOptions = {
             from:user.email,
-            to: 'hanielryanephin@gmail.com',
+            to: 'aaghum.eh@gmail.com',
             subject: user.subject,
             html: `<h1>Name: ${user.firstName}</h1><h1>Email: ${user.email}</h1><h3>Message: ${user.message}</h3>`
         };
