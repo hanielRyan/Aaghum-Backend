@@ -15,7 +15,7 @@ router.post("/",(req,res)=>{
     const user = req.body.data;
     transporter.sendMail({
         from:user.email,
-        to:"aaghum.eh@gmail.com",
+        to:"hanielryanephin@gmail.com",
         subject:user.subject,
         html:`<div style="display:grid;gap:10px;place-items:center;"><h1>Email from ${user.firstName} ${user.lastName} with email ${user.email}.</h1>
         <p>${user.message}</p>
